@@ -11,6 +11,14 @@
 
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./assets/styles/style.css">
+        
+        <!-- Devicon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 
         <!-- Scripts JS -->
         <script src="./scripts/main.js" defer></script>
@@ -47,18 +55,78 @@
 
         <main>
             <section class="first-section">
+                <div>
+                    <h1>
+                        Saudação! Eu sou o <br> <strong>Guilherme Eduardo</strong>. <br> Seja bem-vindo ao meu perfil
+                    </h1>
 
+                    <p>
+                        Tenho 25 anos, estudo para ser um <strong>Desenvolvedor Front-End</strong>, utilizando de tecnologias como <strong>HTML</strong>, <strong>CSS</strong>, <strong>Javascript</strong>, <strong>ReactJS</strong> e <strong>SaaS</strong>
+                    </p>
+                    <a href="#contact">Entrar em Contato</a>
+                </div>
+
+                <div class="box-img-main">
+                    <img class="img-profile" src="./assets/images/img_main.jpg" alt="Foto de perfil principal Guilherme Eduardo">
+                </div>
             </section>
 
             <section class="second-section" id="experiences">
+                <h2 class="title">Experiências</h2>
 
+                <div>
+                    <ul>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50"/>
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50"/>
+                        </li>
+                            
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50"/>
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="50"/>
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" width="50"/>
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50"/>
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="50"/>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
-            <section id="about-me" class="third-section"></section>
+            <section id="about-me" class="third-section">
+                <h2 class="title">Quem Sou Eu</h2>
+                <div>
+                    <img class="img-about-me" src="./assets/images/img_2.jpg" alt="Foto alternativa Guilherme Eduardo">
+                    <p>Sou formado em <strong>Sistemas de Informação</strong>. Meu início de carreira no mundo da tecnologia foi com <strong>HelpDesk</strong>, futuramente vindo ser chamado para trabalhar em uma empresa como Desenvolvedor Java. Sou brasileiro, mas atualmente resido em Portugal.</p>
+                </div>
+            </section>
 
-            <section id="my-projects" class="fourth-section"></section>
+            <section id="my-projects" class="fourth-section">
+                <h2 class="title">Meus Projetos</h2>
+                <p id="loading">Carregando...</p>
+                <div id="my-project-list"></div>
+            </section>
         </main>
 
-        <footer></footer>
+        <footer id="contact">
+            <h2 class="title">Contatos</h2>
+
+            <div>
+                <a href="https://www.instagram.com/guilher.m3/" title="Instagram" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+
+                <a href="https://wa.me/351933838876" title="WhatsApp" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+
+                <a href="mailto:guilhermeeduardoroo@gmail.com" title="Gmail" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+            </div>
+        </footer>
     </body>
 </html>
