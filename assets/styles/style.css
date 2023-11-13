@@ -132,12 +132,6 @@ strong {
     padding: 3rem;
 }
 
-.first-section .img-profile {
-    border-radius: 50%;
-    width: 100%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
 :is(.second-section,.fourth-section) {
     background-color: var(--dark2);
     display: flex;
@@ -158,7 +152,6 @@ strong {
 
 .second-section ul li img {
     width: 100px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .title {
@@ -191,6 +184,31 @@ strong {
     text-align: justify;
 }
 
+#my-project-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#my-project-list a {
+    text-decoration: none;
+    color: var(--white);
+    transition: .5s;
+}
+
+#my-project-list a:hover {
+    color: var(--dark4);
+    text-decoration: underline;
+}
+
+.img-profile, .img-about-me {
+    width: 80%;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;    border-radius: 10px;
+}
+
 /* -------------- MAIN -------------- */
 
 /* -------------- FOOTER -------------- */
@@ -221,3 +239,23 @@ footer a:hover {
 }
 
 /* -------------- FOOTER -------------- */
+
+/* -------------- SCROLLBAR -------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark4);
+}
+
+/* -------------- SCROLLBAR -------------- */

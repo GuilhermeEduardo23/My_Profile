@@ -25,7 +25,7 @@ function getProjects() {
         .then((response) => response.json())
         .then((response) => {
             loadingElement.style.display = 'none'
-            showProjects(response)
+            showProjects(response);
         })
         .catch((err) => {
             console.log(err)
@@ -33,7 +33,7 @@ function getProjects() {
 }
 
 function showProjects(data) {
-    var listElement = document.getElementById('my-projectslist');
+    var listElement = document.getElementById('my-project-list');
 
     for(let i = 0; i < data.length; i++) {
         let a = document.createElement('a');
